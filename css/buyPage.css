@@ -1,0 +1,61 @@
+
+.buyContent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  grid-column: 1 / 13;
+  height: 75vh;
+  margin-top: 5%;
+
+}
+
+.buyContent h1 {
+  text-align: center;
+  grid-column: 4 / 10;
+  margin-bottom: 40px;
+}
+
+.buyBlock-1 {
+  grid-column: 4/7;
+  height: 360px;
+  background: inherit;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(106, 106, 106, 0.5);
+}
+
+.buyBlock-2 {
+  grid-column: 7/10;
+  height: 360px;
+  background: inherit;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(106, 106, 106, 0.5);
+}
+
+.logoWowBuy {
+  display: block;
+  background: url('../img/iconWow.png') no-repeat;
+  background-size: contain;
+  width: 88px;
+  height: 88px;
+  margin: 60px auto 20px auto;
+}
+
+.button-buy {
+  display: block;
+  padding: 10px;
+  width: 128px;
+  text-align: center;
+  background: rgba(227, 143, 35, 0.8);
+  border-radius: 100px;
+  text-decoration: none;
+  color: white;
+  margin: 40px auto;
+
+}
+
+.button-buy:hover {
+  background: rgba(227, 143, 35, 1);
+  cursor: pointer;
+}

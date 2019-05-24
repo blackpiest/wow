@@ -1,0 +1,99 @@
+/* Настраиваем абзац текста */
+.content p {
+ padding-top: 20px;
+}
+
+/* Изображение сильваны */
+.image {
+  grid-column: 6 /12;
+  margin-top: 36px;
+  height: 90vh;
+  background: url('../img/sylvanas.png') no-repeat;
+  background-size: 98%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* Плашка для трейлера */
+.section-trailer {
+  background: rgba(78, 78, 78, 0.5);
+  width: 60vw;
+  height: 20vh;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 1fr;
+  grid-column-gap: 70px;
+  bottom: 0;
+}
+
+/* Загаловок трейлера */
+.name-trailer {
+  font-weight: 700;
+  color: #DCDCDC;
+  margin: 40px 0 20px 0;
+}
+
+/* Текстовый блок трейлера */
+.text-trailer {
+  font-size: 16px;
+  color: #B6B6B6;
+  width: 450px;
+}
+
+/* Превью-изображение трейлера */
+.trailer-preview {
+  background: url('../img/videoPreview.jpg') no-repeat;
+  background-size: cover;
+  grid-column: 1 / 2;
+  height: 100%;
+  transition: all 500ms ease;
+}
+
+/* Кнопка запуска трейлера */
+.trailer-play {
+  background: url('../img/play-icon.svg') no-repeat center;
+  background-size: 30%;
+  height: 100%;
+  width: 100%;
+  transition: all2 500ms ease;
+}
+
+/* Анимация нажатия на кнопку плея */
+.trailer-preview:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.48);
+}
+
+@media (max-width: 1414px) {
+  .section-trailer  {
+    width: 100%;
+  }
+  .content {
+    margin-top: 25%;
+  }
+  .content h1 {
+    font-size: 68px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    grid-column: 6 / 8;
+  }
+
+  .content {
+    grid-column: 3 / 12;
+  }
+  .image {
+    grid-column: 3 / 12;
+    height: 50vh;
+    background-size: 80%;
+  }
+  .section-trailer {
+    height: 24vh;
+  }
+  .text-trailer {
+    height: 100%;
+    width: 100%;
+  }
+}

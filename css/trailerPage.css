@@ -1,0 +1,25 @@
+/* Настройка сетки контента */
+.trailerContent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / 13;
+  margin-top: 8%;
+}
+
+/* Видео */
+.videoContainer {
+  grid-column: 2 / 8;
+  width: 95%;
+  height: 53vh;
+  background: url('../img/videoPreview.jpg') no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Текстовый блок */
+.textTrailer {
+  grid-column: 8 / 12;
+  margin: auto 0;
+}

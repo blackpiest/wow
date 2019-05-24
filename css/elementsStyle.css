@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700,900&subset=cyrillic,cyrillic-ext');
+
+/*
+-------------------------
+Базовые стили
+-------------------------
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  overflow: hidden;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+a {
+  color: #4cd3fe;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+
+/*
+-------------------------
+Cтили повторяющихся элементов на сайте
+-------------------------
+*/
+
+/* Прозрачная кнопка */
+.button-clear {
+   width: 88px;
+   text-align: center;
+   padding: 10px;
+   margin: 20px auto 0 auto;
+   border: 1px solid #fff;
+   border-radius: 100px;
+}
+
+.button-clear a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-clear:hover {
+  background: rgba(255, 255, 255, 0.20);
+  cursor: pointer;
+}
+
+/*
+-------------------------
+Основная настройка вида сайта
+-------------------------
+*/
+
+/* Настройка сетки верстки страницы */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  overflow-x:hidden;
+}
+
+.content {
+  grid-column: 3 / 6;
+  margin-top: 25%;
+}
+
+/* Настройка сетки верстки шапки */
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 80px;
+  grid-column-gap: 20px;
+  grid-column: 1 / 13;
+  overflow: hidden;
+}
+
+header .logo {
+ grid-column: 2/3;
+}
+
+/* Логотип в шапке */
+header .logo a img {
+ width: 100px;
+ padding-top: 20px;
+}
+
+header .logo a img:hover {
+ opacity: 0.8;
+}
+
+/* Пункты меню навигации */
+header li {
+ margin: auto 0;
+ text-align: center;
+ list-style: none;
+}
+
+header li a{
+ color: #fff;
+ text-decoration: none;
+ opacity: 0.8;
+}
+
+header li a:hover {
+ opacity: 1;
+ text-shadow: 0 0 10px rgba(46, 46, 46, 0.2);
+}
+
+/* Подвал */
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  grid-column: 1 / 13;
+}
+
+/* Навигационное меню */
+.mainPage {
+  grid-column: 8 / 9;
+}
+
+.aboutPage {
+  grid-column: 9 / 10;
+}
+
+.trailerPage {
+  grid-column: 10 / 11;
+}
+
+.buyPage {
+  grid-column: 11 / 12;
+}
+
+.buyPage a:hover {
+  color: rgb(251, 233, 0);
+}
+
+/* Фоны страниц */
+#bg-index {
+ background: url("../img/bg1.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ overflow: hidden;
+}
+
+#bg-about {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bg2.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  overflow: hidden;
+}
+
+#bg-trailer {
+  background: url("../img/bg3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#bg-buy {
+  background: url("../img/bg4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
